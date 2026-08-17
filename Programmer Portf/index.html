@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belhart Rajesky Pasaribu — Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/128/three.min.js"></script>
+    <link rel="stylesheet" href="enhancements.css">
+
+  </head>
+  <body id="home">
+    <div id="preloader"><div class="loader-ring"></div></div>
+    <div id="scrollProgress"></div>
+    <div id="cursorDot"></div>
+    <div id="cursorRing"></div>
+
+    <!-- Navbar -->
+    <nav>
+      <a href="#home" class="nav-brand">Belhart Rajesky Pasaribu</a>
+      <div class="nav-right">
+        <ul class="navbar">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#so">Projects</a></li>
+          <li><a href="#qualification">Qualification</a></li>
+          <li><a href="#achievement">Achievement</a></li>
+        </ul>
+        <a href="#aboutweb" class="btn-cta">Me!!!</a>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Buka menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Menu mobile">
+      <a href="#home" class="mobile-nav-link">🏠 Home</a>
+      <a href="#so" class="mobile-nav-link">🖥️ Projects</a>
+      <a href="#qualification" class="mobile-nav-link">🎓 Qualification</a>
+      <a href="#achievement" class="mobile-nav-link">🏆 Achievement</a>
+      <a href="#aboutweb" class="mobile-nav-link btn-cta-mobile">Me!!</a>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Hero Section -->
+    <div class="header-all">
+      <canvas id="heroCanvas"></canvas>
+      <div class="dip-header-text">
+        <h1 class="header-text">Informatics student passionate about</h1>
+        <h1 class="header-text-sec"></h1>
+      </div>
+      <img class="storyset" src="images/Mail sent-amico.png" alt="Ilustrasi email dikirim" />
+    </div>
+
+    <!-- Subtitle -->
+    <div class="sec-text">
+      <h2 class="sec-text-first">I care about how things work just as much as how they look. And when I step away from the screen, I draw</h2>
+      <p class="sec-text-sec">I build things that work well and look even better</p>
+    </div>
+
+    <div class="tech-marquee">
+  <div class="tech-track">
+    <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Python</span>
+    <span>PHP</span><span>React</span><span>Node.js</span><span>TensorFlow</span>
+    <span>GSAP</span><span>Three.js</span><span>Figma</span><span>Git</span>
+  </div>
+</div>
+
+    <!-- About Card -->
+    <div class="about gsap-reveal-scale" id="aboutweb">
+      <div class="about-text">
+        <div class="about-text-header">
+          <h2>Belhart Rajesky</h2>
+          <h2 class="belhart-header">Pasaribu</h2>
+        </div>
+        <p>
+          I'm Belhart, a Computer Science student with a focus on programming, AI engineering, and digital design. I started with code, and somewhere along the way I realized that building something truly complete means caring about every layer of it, how it thinks, how it runs, and how it feels to use. That same thinking carries into my design work, and even into drawing. I don't see them as separate skills. To me, they are all just different ways of solving the same problem.
+        </p>
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+    <section id="so" class="projects-section">
+      <div class="projects-inner">
+        <div class="projects-heading gsap-reveal">
+          <h2 class="projects-title">My <span class="blue">Projects</span></h2>
+          <p class="projects-subtitle">A collection of projects I've built and worked on over time</p>
+        </div>
+        <div class="projects-grid" id="projectsGrid">
+
+          <!-- Card 1 -->
+          <div class="proj-card gsap-card">
+            <div class="proj-img-wrap">
+              <img src="images/perceptron.jpeg" alt="Disaster Status Classification preview" loading="lazy" class="proj-img" />
+              <span class="proj-tag">Deep Learning</span>
+            </div>
+            <div class="proj-body">
+              <h3 class="proj-name">Perceptron Real-Time</h3>
+              <p class="proj-desc">A simple web-based application that demonstrates the Backpropagation algorithm in a neural network. Users can input training data, configure network parameters, and visualize how the model learns through forward and backward passes in real time.</p>
+              <div class="proj-tech">
+                <span>JavaScript</span><span>MLP</span><span>Backpropagation</span>
+              </div>
+              <div class="proj-btns">
+                <a href="https://github.com/belhartrp/simple-backpropagation-free" class="proj-btn proj-btn-outline" target="_blank" rel="noopener noreferrer">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  Source Code
+                </a>
+                <a href="https://belhartrp.github.io/simple-backpropagation-free/" class="proj-btn proj-btn-fill" target="_blank" rel="noopener noreferrer">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  View Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="proj-card gsap-card">
+            <div class="proj-img-wrap">
+              <img src="images/crud-cura.jpeg" alt="Sentiment Analysis System preview" width="600" height="340" loading="lazy" class="proj-img" />
+              <span class="proj-tag">WEB Dev</span>
+            </div>
+            <div class="proj-body">
+              <h3 class="proj-name">CRUD Cura</h3>
+              <p class="proj-desc">A web-based application that allows users to monitor real-time traffic conditions and report traffic incidents or disasters directly from their location. Designed to support faster emergency response and informed decision-making through community-driven data.</p>
+              <div class="proj-tech">
+                <span>JavaScript</span><span>React</span><span>Leaflet</span>
+              </div>
+              <div class="proj-btns">
+                <a href="https://github.com/belhartrp/crud-cura" class="proj-btn proj-btn-outline" target="_blank" rel="noopener noreferrer">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  Source Code
+                </a>
+                <a href="https://crud-cura.vercel.app/" class="proj-btn proj-btn-fill" target="_blank" rel="noopener noreferrer">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  View Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="proj-card gsap-card">
+            <div class="proj-img-wrap">
+              <img src="images/qbot.jpeg" alt="Personal Portfolio Website preview" width="600" height="340" loading="lazy" class="proj-img" />
+              <span class="proj-tag">NLP</span>
+            </div>
+            <div class="proj-body">
+              <h3 class="proj-name">Chatbot-Quantum Bot</h3>
+              <p class="proj-desc">An interactive web application featuring an AI chatbot that explains quantum physics concepts through a game-style dialog box interface. </p>
+              <div class="proj-tech">
+                <span>Python</span><span>Flask</span><span>JavaScript</span><span>Classification</span>
+              </div>
+              <div class="proj-btns">
+                <a href="https://github.com/belhartrp/tugas-chat-bot" class="proj-btn proj-btn-outline" target="_blank" rel="noopener noreferrer">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  Source Code
+                </a>
+                <a href="#" class="proj-btn proj-btn-fill" target="_blank" rel="noopener noreferrer">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  View Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="proj-card gsap-card">
+            <div class="proj-img-wrap">
+              <img src="images/cnn-kembaran.jpeg" alt="Mail Server preview" width="600" height="340" loading="lazy" class="proj-img" />
+              <span class="proj-tag">Deep Learing</span>
+            </div>
+            <div class="proj-body">
+              <h3 class="proj-name">FaceMatch AI(CNN)</h3>
+              <p class="proj-desc">A web-based face matching application powered by Convolutional Neural Network (CNN) that analyzes and compares facial features to find the most similar face from an uploaded image.</p>
+              <div class="proj-tech">
+                <span>CNN</span><span>JavaScript</span><span>Tensorflow</span><span>Flask</span>
+              </div>
+              <div class="proj-btns">
+                <a href="https://belhartrp.github.io/lopp-yuu-guys/" class="proj-btn proj-btn-outline" target="_blank" rel="noopener noreferrer">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  Source Code
+                </a>
+                <a href="https://belhartrp.github.io/lopp-yuu-guys/" class="proj-btn proj-btn-fill" target="_blank" rel="noopener noreferrer">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  View Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="proj-card gsap-card">
+            <div class="proj-img-wrap">
+              <img src="images/Keppo.png" alt="Keppo preview" width="600" height="340" loading="lazy" class="proj-img" />
+              <span class="proj-tag">Web Dev</span>
+            </div>
+            <div class="proj-body">
+              <h3 class="proj-name">Keppo</h3>
+              <p class="proj-desc">A web-based Instagram follower analysis platform designed to visualize account relationships through follower and following data. Using automated data processing, Keppo identifies mutual connections, non-followers, fans, followers, and following lists.</p>
+              <div class="proj-tech">
+                <span>Instagram</span><span>JavaScript</span><span>JSZIP</span><span>XLSX</span>
+              </div>
+              <div class="proj-btns">
+                <a href="https://belhartrp.github.io/lopp-yuu-guys/" class="proj-btn proj-btn-outline" target="_blank" rel="noopener noreferrer">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  Source Code
+                </a>
+                <a href="https://belhartrp.github.io/instagram-analyzer/" class="proj-btn proj-btn-fill" target="_blank" rel="noopener noreferrer">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  View Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Projects Pagination -->
+        <div class="pg-wrap" id="projectsPagination"></div>
+      </div>
+    </section>
+
+
+    <!-- Qualification Section -->
+    <section id="qualification" class="qual-section">
+      <div class="qual-inner">
+
+        <div class="qual-heading gsap-reveal">
+          <h2 class="qual-title">My <span class="blue">Qualification</span></h2>
+          <p class="qual-subtitle">Education and experience that shaped who I am</p>
+        </div>
+
+        <!-- Tab Buttons -->
+        <div class="qual-tabs gsap-reveal">
+          <button class="qual-tab-btn active" onclick="switchQualTab('education', this)">
+            🎓 Education
+          </button>
+          <button class="qual-tab-btn" onclick="switchQualTab('experience', this)">
+            💼 Experience
+          </button>
+        </div>
+
+        <!-- Education Panel -->
+        <div class="qual-panel" id="qual-education">
+          <div class="qual-timeline">
+
+            <div class="qual-item">
+              <div class="qual-dot"></div>
+              <div class="qual-item-body">
+                <span class="qual-year">2022 — Present</span>
+                <h4 class="qual-item-title">S1 Informatics Engineering</h4>
+                <p class="qual-item-place">Unika Santo Thomas Medan</p>
+                <p class="qual-item-desc">Focusing on programming, AI engineering, machine learning, and software development. Currently completing thesis on disaster status classification.</p>
+              </div>
+            </div>
+
+            <div class="qual-item">
+              <div class="qual-dot"></div>
+              <div class="qual-item-body">
+                <span class="qual-year">2019 — 2022</span>
+                <h4 class="qual-item-title">Senior High School</h4>
+                <p class="qual-item-place">SMAN 15 Medan</p>
+                <p class="qual-item-desc">Science major. Developed early interest in computers, logic, and digital design.</p>
+              </div>
+            </div>
+
+            <div class="qual-item">
+              <div class="qual-dot"></div>
+              <div class="qual-item-body">
+                <span class="qual-year">2016 — 2019</span>
+                <h4 class="qual-item-title">Junior High School</h4>
+                <p class="qual-item-place">SMPN 30 Medan</p>
+                <p class="qual-item-desc">Built foundational knowledge in mathematics and natural sciences.</p>
+              </div>
+            </div>
+
+            <div class="qual-item">
+              <div class="qual-dot"></div>
+              <div class="qual-item-body">
+                <span class="qual-year">2010 — 2016</span>
+                <h4 class="qual-item-title">Elementary School</h4>
+                <p class="qual-item-place">SDN 021 Medan Sunggal</p>
+                <p class="qual-item-desc">Established core academic skills in literacy, numeracy, and critical thinking.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Experience Panel (hidden by default) -->
+        <div class="qual-panel qual-panel-hidden" id="qual-experience">
+          <div class="qual-timeline">
+
+            <div class="qual-item">
+              <div class="qual-dot"></div>
+              <div class="qual-item-body">
+                <span class="qual-year">2025 — Present</span>
+                <h4 class="qual-item-title">Student Executive Board (BEM)</h4>
+                <p class="qual-item-place">BEM FIKOM — Unika Santo Thomas</p>
+                <p class="qual-item-desc">Managing social media content, documentation, and visual communication for the faculty student organization.</p>
+              </div>
+            </div>
+
+            <div class="qual-item">
+              <div class="qual-dot"></div>
+              <div class="qual-item-body">
+                <span class="qual-year">2025</span>
+                <h4 class="qual-item-title">Teaching Assistant</h4>
+                <p class="qual-item-place">Unika Santo Thomas Medan</p>
+                <p class="qual-item-desc">Assisted lecturers in two courses: Object-Based Software Engineering and Cryptography & Steganography. </p>
+              </div>
+            </div>
+
+            <div class="qual-item">
+              <div class="qual-dot"></div>
+              <div class="qual-item-body">
+                <span class="qual-year">July - August 2025</span>
+                <h4 class="qual-item-title">Data Management Intern</h4>
+                <p class="qual-item-place">PT. Telkom Akses — Sumatera</p>
+                <p class="qual-item-desc">Handled data management operations during internship, gaining hands-on experience in enterprise data handling and telecommunication industry workflows.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Achievement Section -->
+    <section id="achievement" class="ach-section">
+      <div class="ach-inner">
+
+        <div class="ach-heading gsap-reveal">
+          <h2 class="ach-title">My <span class="blue">Achievement</span></h2>
+          <p class="ach-subtitle">Certificates and courses I've completed along the way</p>
+        </div>
+
+        <div class="ach-grid" id="achievementGrid">
+
+          <!-- Card 1 -->
+          <div class="ach-card gsap-card">
+            <div class="ach-img-wrap">
+              <img src="images/ibm-certi.jpg" alt="Certificate preview" class="ach-img" loading="lazy" />
+              <span class="ach-badge">IBM</span>
+            </div>
+            <div class="ach-body">
+              <h3 class="ach-name">Code Generation and Optimization Using IBM Granite</h3>
+              <p class="ach-issuer">IBM SkillsBuild</p>
+              <p class="ach-date">📅 August 2025</p>
+              <a href="#" class="ach-btn" target="_blank" rel="noopener noreferrer">View Certificate →</a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="ach-card gsap-card">
+            <div class="ach-img-wrap">
+              <img src="images/web-design.jpeg" alt="Certificate preview" class="ach-img" loading="lazy" />
+              <span class="ach-badge">Fikom Famz</span>
+            </div>
+            <div class="ach-body">
+              <h3 class="ach-name">3rd Place — Web Design Competition</h3>
+              <p class="ach-issuer">FIKOM Famz Event-3 2025</p>
+              <p class="ach-date">📅  July 2025</p>
+              <a href="#" class="ach-btn" target="_blank" rel="noopener noreferrer">View Certificate →</a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+           <div class="ach-card gsap-card">
+            <div class="ach-img-wrap">
+              <img src="images/ibmdua.jpg" alt="Certificate preview" class="ach-img" loading="lazy" />
+              <span class="ach-badge">IBM</span>
+            </div>
+            <div class="ach-body">
+              <h3 class="ach-name">IBM Granite Models for Software Development</h3>
+              <p class="ach-issuer">IBM SkillsBuild</p>
+              <p class="ach-date">📅 August 2025</p>
+              <a href="#" class="ach-btn" target="_blank" rel="noopener noreferrer">View Certificate →</a>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+           <div class="ach-card gsap-card">
+            <div class="ach-img-wrap">
+              <img src="images/ibmsatu.jpg" alt="Certificate preview" class="ach-img" loading="lazy" />
+              <span class="ach-badge">IBM</span>
+            </div>
+            <div class="ach-body">
+              <h3 class="ach-name">Code Generation and Optimization Using IBM Granite</h3>
+              <p class="ach-issuer">IBM SkillsBuild</p>
+              <p class="ach-date">📅 August 2025</p>
+              <a href="#" class="ach-btn" target="_blank" rel="noopener noreferrer">View Certificate →</a>
+            </div>
+          </div>
+          
+
+        </div>
+        <!-- Achievement Pagination -->
+        <div class="pg-wrap" id="achievementPagination"></div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-wave">
+        <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M0,64 C180,120 360,10 540,58 C720,105 900,12 1080,58 C1260,104 1380,38 1440,58 L1440,120 L0,120 Z" fill="#1a2a3a"></path>
+        </svg>
+      </div>
+
+      <div class="footer-inner">
+        <div class="footer-top gsap-reveal">
+          <h2 class="footer-title">Let’s Connect</h2>
+          <p class="footer-text">You can find me on these platforms and contact channels.</p>
+        </div>
+
+        <div class="footer-links gsap-reveal">
+          <a href="https://github.com/belhartrp" class="footer-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="mailto:belhartrpb@gmail.com" class="footer-link">Email</a>
+          <a href="https://www.linkedin.com/in/belhart-rajesky-pasaribu-8709a536b/" class="footer-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://wa.me/6282274316435" class="footer-link" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a href="https://www.instagram.com/belhart.rp/" class="footer-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-copy">© 2025 Belhart Rajesky Pasaribu. All rights reserved.</p>
+          <p class="footer-made">Created by <span class="footer-highlight">Belhart Rajesky Pasaribu</span></p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
+
+    <script src="script.js"></script>
+    <script src="enhancements.js"></script>
+  </body>
+</html>
+
+<!-- AI engineering -->
